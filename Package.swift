@@ -36,12 +36,8 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "Thingy",
-            path: "Sources"),
-		.testTarget(
-				name: "ThingyTests",
-				dependencies: ["Thingy"],
-				path: "Tests"),
-    ]
+        .target(name: "Thingy", path: "Sources"),
+        .testTarget(name: "ThingyTests", dependencies: ["Thingy"], path: "Tests"),
+    ],
+    swiftLanguageVersions: [.v5]
 )
